@@ -35,7 +35,7 @@ const AiAutomationWebsite = () => {
     try {
       // Replace with your actual Google Apps Script web app URL
       const SCRIPT_URL =
-        "https://script.google.com/macros/s/AKfycbwKrCjHuiDH2XROJm7mzXXKKaxhxdksmb-zhJpeHjJ9ZhKUK-kXYXlwagev82zi9Iumpg/exec";
+        "https://script.google.com/macros/s/AKfycbyHHM29-pVCmf4UHM_Fm4Bq0pS6Cx8jAEiqWh2N4O9UCSv4YJVERKspmlScDDJAWAAO-Q/exec";
 
       const response = await fetch(SCRIPT_URL, {
         method: "POST",
