@@ -13,9 +13,9 @@ export const Navbar = () => {
             <div className="flex items-center">
               {/* <div className="text-2xl font-bold text-gray-900">TechAI</div> */}
               <img
-                src="src/images/ThinkAI_Logo_rectangular.png"
+                src="../images/ThinkAI_Logo_rectangular.png"
                 alt="thinkAI logo"
-              ></img>
+              />
             </div>
 
             {/* Desktop Navigation */}
