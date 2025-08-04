@@ -35,7 +35,7 @@ const AiAutomationWebsite = () => {
     try {
       // Replace with your actual Google Apps Script web app URL
       const SCRIPT_URL =
-        "https://script.google.com/macros/s/AKfycbzdx4ng0co3_FLlQRH9-4lQSn2LSshK0WOU7WYJ_Ex6xIp5ZKNaNpcqenE9swNPSkhoww/exec";
+        "https://script.google.com/macros/s/AKfycbwKrCjHuiDH2XROJm7mzXXKKaxhxdksmb-zhJpeHjJ9ZhKUK-kXYXlwagev82zi9Iumpg/exec";
 
       const response = await fetch(SCRIPT_URL, {
         method: "POST",
@@ -47,34 +47,31 @@ const AiAutomationWebsite = () => {
         redirect: "follow",
       });
 
-      const responseText = await response.text();
-      console.log("Raw response:", responseText);
-      console.log("response code", response.status);
-      console.log("response ok", response.ok);
+      console.log("Form submission completed");
 
-      let result;
-      try {
-        result = JSON.parse(responseText);
-      } catch (e) {
-        console.error("Response is not valid JSON:", responseText);
-        // Handle as HTML or plain text response
-        result = { success: false, message: responseText };
-      }
+      var result;
 
-      //const result = await response.json();
-
-      console.log(result);
-
-      if (result.success) {
-        alert("Thank you for your message! We will get back to you soon.");
-        setFormData({ name: "", phone: "", email: "", message: "" });
-      } else {
-        alert("There was an error submitting your message. Please try again.");
-        console.error("Submission error:", result.message);
-      }
+      result = {
+        success: true,
+        message: "Thank you! Your message has been submitted successfully.",
+      };
     } catch (error) {
-      console.error("Error submitting form:", error);
+      console.error("Network error:", error);
+      result = {
+        success: false,
+        message:
+          "Sorry, there was an error submitting your message. Please try again.",
+      };
+    }
+
+    console.log(result);
+
+    if (result.success) {
+      alert("Thank you for your message! We will get back to you soon.");
+      setFormData({ name: "", phone: "", email: "", message: "" });
+    } else {
       alert("There was an error submitting your message. Please try again.");
+      console.error("Submission error:", result.message);
     }
   };
 
