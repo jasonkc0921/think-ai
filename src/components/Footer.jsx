@@ -1,4 +1,5 @@
 import { Facebook, Twitter, Linkedin, Youtube } from "lucide-react";
+import logo from "../images/ThinkAI_Logo_rectangular.png";
 
 const Footer = () => {
   return (
@@ -7,10 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             {/* <h3 className="text-xl font-bold mb-4">ThinkAI</h3> */}
-            <img
-              src="../images/ThinkAI_Logo_rectangular.png"
-              alt="thinkAI logo"
-            ></img>
+            <img src={logo} alt="thinkAI logo"></img>
             <p className="text-gray-400 mb-4">
               Transforming businesses through intelligent automation solutions.
             </p>

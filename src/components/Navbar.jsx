@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "../images/ThinkAI_Logo_rectangular.png";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,10 +13,7 @@ export const Navbar = () => {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               {/* <div className="text-2xl font-bold text-gray-900">TechAI</div> */}
-              <img
-                src="/images/ThinkAI_Logo_rectangular.png"
-                alt="thinkAI logo"
-              />
+              <img src={logo} alt="thinkAI logo" />
             </div>
 
             {/* Desktop Navigation */}
