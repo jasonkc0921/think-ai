@@ -13,7 +13,7 @@ export const Navbar = () => {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               {/* <div className="text-2xl font-bold text-gray-900">TechAI</div> */}
-              <img src={logo} alt="thinkAI logo" />
+              <img src={logo} alt="thinkAI logo" width="160" height="80" />
             </div>
 
             {/* Desktop Navigation */}

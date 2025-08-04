@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             {/* <h3 className="text-xl font-bold mb-4">ThinkAI</h3> */}
-            <img src={logo} alt="thinkAI logo"></img>
+            <img src={logo} alt="thinkAI logo" width="160" height="80"></img>
             <p className="text-gray-400 mb-4">
               Transforming businesses through intelligent automation solutions.
             </p>
