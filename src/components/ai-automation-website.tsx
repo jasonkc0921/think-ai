@@ -42,13 +42,15 @@ const AiAutomationWebsite = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        mode: "no-cors",
+        // mode: "no-cors",
         body: JSON.stringify(formData),
         redirect: "follow",
       });
 
-      /*       const responseText = await response.text();
+      const responseText = await response.text();
       console.log("Raw response:", responseText);
+      console.log("response code", response.status);
+      console.log("response ok", response.ok);
 
       let result;
       try {
@@ -57,9 +59,11 @@ const AiAutomationWebsite = () => {
         console.error("Response is not valid JSON:", responseText);
         // Handle as HTML or plain text response
         result = { success: false, message: responseText };
-      } */
+      }
 
-      const result = await response.json();
+      //const result = await response.json();
+
+      console.log(result);
 
       if (result.success) {
         alert("Thank you for your message! We will get back to you soon.");
