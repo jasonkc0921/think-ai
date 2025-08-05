@@ -48,8 +48,8 @@ const App = () => {
       <RouterProvider router={router} />
       {/* WhatsApp Chat Button (appears on all pages) */}
       <WhatsAppChat
-        phoneNumber="1234567890" // Replace with your actual WhatsApp number
-        companyName="Orientiques Enterprise" // Replace with your company name
+        phoneNumber="0122670130" // Replace with your actual WhatsApp number
+        companyName="Think AI" // Replace with your company name
       />
     </>
   );
