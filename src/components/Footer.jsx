@@ -36,31 +36,10 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Services</h4>
             <ul className="space-y-2 text-gray-400">
-              <li>
-                <a href="#" className="hover:text-white">
-                  AI Automation
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white">
-                  Make.com Solutions
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white">
-                  CRM Integration
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white">
-                  Process Automation
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white">
-                  Customer Service Bots
-                </a>
-              </li>
+              <li>AI Automation</li>
+              <li>CRM Integration</li>
+              <li>Process Automation</li>
+              <li>Customer Service Bots</li>
             </ul>
           </div>
 
@@ -75,21 +54,6 @@ const Footer = () => {
               <li>
                 <a href="#" className="hover:text-white">
                   Case Studies
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white">
-                  White Papers
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white">
-                  Webinars
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white">
-                  Documentation
                 </a>
               </li>
             </ul>
@@ -108,22 +72,12 @@ const Footer = () => {
                   Terms of Service
                 </a>
               </li>
-              <li>
-                <a href="#" className="hover:text-white">
-                  Cookie Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white">
-                  GDPR Compliance
-                </a>
-              </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 TechAI Automation. All rights reserved.</p>
+          <p>&copy; 2025 Think-AI Automation. All rights reserved.</p>
         </div>
       </div>
     </footer>
