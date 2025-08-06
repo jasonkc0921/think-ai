@@ -1,8 +1,8 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { Landing } from "./pages/Landing";
-import { TandS_us } from "./pages/TandS_us";
-import { Privacy_us } from "./pages/Privacy_us";
+import { TandSus } from "./pages/TandS_us";
+import { Privacyus } from "./pages/Privacy_us";
 //import { Zitanwood } from './pages/Take_care_of_zitan_furniture';
 //import { Blog } from './pages/Blog';
 //import 'leaflet/dist/leaflet.css';
@@ -24,15 +24,15 @@ const router = createBrowserRouter([
       },
       /*       {
         path: '/about',
-        element: <About_us/>,
+        element: <Aboutus/>,
       }, */
       {
         path: "/privacy",
-        element: <Privacy_us />,
+        element: <Privacyus />,
       },
       {
         path: "/termofservice",
-        element: <TandS_us />,
+        element: <TandSus />,
       },
       /*       {
         path: '/blog',
