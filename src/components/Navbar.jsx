@@ -19,19 +19,19 @@ export const Navbar = () => {
             {/* Desktop Navigation */}
             <nav className="hidden md:flex space-x-8">
               <a
-                href="#home"
+                href="/#home"
                 className="text-gray-700 hover:text-green-600 transition-colors"
               >
                 Home
               </a>
               <a
-                href="#services"
+                href="/#services"
                 className="text-gray-700 hover:text-green-600 transition-colors"
               >
                 Services
               </a>
               <a
-                href="#features"
+                href="/#features"
                 className="text-gray-700 hover:text-green-600 transition-colors"
               >
                 Features
@@ -43,7 +43,7 @@ export const Navbar = () => {
                 About
               </a> */}
               <a
-                href="#contact"
+                href="/#contact"
                 className="text-gray-700 hover:text-green-600 transition-colors"
               >
                 Contact

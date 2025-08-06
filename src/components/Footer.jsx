@@ -9,6 +9,7 @@ const Footer = () => {
           <div>
             {/* <h3 className="text-xl font-bold mb-4">ThinkAI</h3> */}
             <img src={logo} alt="thinkAI logo" width="120" height="60"></img>
+            <br></br>
             <p className="text-gray-400 mb-4">
               Transforming businesses through intelligent automation solutions.
             </p>
@@ -63,12 +64,12 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Legal</h4>
             <ul className="space-y-2 text-gray-400">
               <li>
-                <a href="#" className="hover:text-white">
+                <a href="/privacy" className="hover:text-white">
                   Privacy Policy
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white">
+                <a href="/termofservice" className="hover:text-white">
                   Terms of Service
                 </a>
               </li>
