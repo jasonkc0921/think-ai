@@ -164,10 +164,10 @@ const TermOfService = () => {
                 <br></br>
                 Email:{" "}
                 <a
-                  href="mailto:thinkai_cust_service@gmail.com"
+                  href="mailto:thinkai.cust.service@gmail.com"
                   className="contact-email"
                 >
-                  thinkai_cust_service@gmail.com
+                  thinkai.cust.service@gmail.com
                 </a>
                 <br></br>
                 Website: www.think-ai.online
@@ -186,10 +186,10 @@ const TermOfService = () => {
             </p>
             <p>
               <a
-                href="mailto:thinkai_cust_service@gmail.com"
+                href="mailto:thinkai.cust.service@gmail.com"
                 className="contact-email"
               >
-                thinkai_cust_service@gmail.com
+                thinkai.cust.service@gmail.com
               </a>
             </p>
           </div>

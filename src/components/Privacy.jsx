@@ -82,7 +82,7 @@ const Privacy = () => {
                 <li>Request data deletion when no longer needed</li>
               </ul>
               <p className="contact-info">
-                Contact us at <strong>thinkai_cust_service@gmail.com</strong> to
+                Contact us at <strong>thinkai.cust.service@gmail.com</strong> to
                 exercise these rights.
               </p>
             </div>

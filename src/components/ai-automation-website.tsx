@@ -485,7 +485,7 @@ const AiAutomationWebsite = () => {
                   <div>
                     <p className="font-semibold text-gray-900">Email</p>
                     <p className="text-gray-600">
-                      thinkai_cust_service@gmail.com
+                      thinkai.cust.service@gmail.com
                     </p>
                   </div>
                 </div>
