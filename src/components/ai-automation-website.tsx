@@ -474,7 +474,7 @@ const AiAutomationWebsite = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900">Phone</p>
-                    <p className="text-gray-600">+1 (555) 123-4567</p>
+                    <p className="text-gray-600">+6012 2670130</p>
                   </div>
                 </div>
 
@@ -484,7 +484,9 @@ const AiAutomationWebsite = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900">Email</p>
-                    <p className="text-gray-600">info@techai.com</p>
+                    <p className="text-gray-600">
+                      thinkai_cust_service@gmail.com
+                    </p>
                   </div>
                 </div>
 
@@ -495,7 +497,7 @@ const AiAutomationWebsite = () => {
                   <div>
                     <p className="font-semibold text-gray-900">Address</p>
                     <p className="text-gray-600">
-                      123 Innovation Drive, Tech City, TC 12345
+                      8, JLN Casabella 1, 47810 PJ, Selangor, Malaysia.
                     </p>
                   </div>
                 </div>
