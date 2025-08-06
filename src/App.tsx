@@ -12,7 +12,7 @@ import { Privacyus } from "./pages/Privacy_us";
 //import 'leaflet/dist/leaflet.css';
 import WhatsAppChat from "./components/WhatsAppChat";
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
@@ -31,11 +31,11 @@ const router = createHashRouter([
         element: <Aboutus/>,
       }, */
       {
-        path: "privacy",
+        path: "/privacy",
         element: <Privacyus />,
       },
       {
-        path: "termofservice",
+        path: "/termofservice",
         element: <TandSus />,
       },
       /*       {
