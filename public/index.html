@@ -19,10 +19,21 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
+
       gtag("config", "AW-1695464567", {
         debug_mode: true,
       });
-      console.log("Google Analytics loaded via HTML");
+
+      // Fire the conversion event with the specific label
+      gtag("event", "conversion", {
+        send_to: "AW-1695464567/ikFrCJ3w2oAbEL-4zZQ_",
+        value: 1.0, // Optional: set conversion value
+        currency: "USD", // Optional: set currency
+      });
+
+      console.log(
+        "Google Ads conversion tracking fired with label: ikFrCJ3w2oAbEL-4zZQ_"
+      );
     </script>
     <link
       rel="apple-touch-icon"
