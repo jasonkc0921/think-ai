@@ -25,27 +25,65 @@ const AiAutomationWebsite = () => {
   });
 
   useEffect(() => {
-    // Create and append the Google Analytics script
-    const script = document.createElement("script");
-    script.async = true;
-    script.src = "https://www.googletagmanager.com/gtag/js?id=AW-1695464567";
-    document.head.appendChild(script);
-
-    // Initialize dataLayer and gtag function
-    script.onload = () => {
-      (window as any).dataLayer = (window as any).dataLayer || [];
-      function gtag(...args: any[]) {
-        (window as any).dataLayer.push(args);
+    // Simple and clean approach - bypassing TypeScript checking
+    const loadGoogleAnalytics = () => {
+      // Check if already loaded to avoid duplicates
+      if ((window as any).gtag) {
+        console.log("Google Analytics already loaded");
+        return;
       }
+
+      // Initialize dataLayer
+      (window as any).dataLayer = (window as any).dataLayer || [];
+
+      // Create gtag function
+      const gtag = (...args: any[]) => {
+        (window as any).dataLayer.push(args);
+      };
+
+      // Make gtag available globally
       (window as any).gtag = gtag;
 
-      gtag("js", new Date());
-      gtag("config", "AW-1695464567");
+      // Create and add the Google Analytics script
+      const script = document.createElement("script");
+      script.async = true;
+      script.src = "https://www.googletagmanager.com/gtag/js?id=AW-1695464567";
+
+      // Configure GA when script loads
+      script.onload = () => {
+        gtag("js", new Date());
+        gtag("config", "AW-1695464567");
+        console.log("Google Analytics configured successfully");
+      };
+
+      // Fallback configuration in case onload doesn't fire
+      script.onerror = () => {
+        console.error("Failed to load Google Analytics script");
+      };
+
+      document.head.appendChild(script);
+
+      // Additional fallback - configure after a delay
+      setTimeout(() => {
+        gtag("js", new Date());
+        gtag("config", "AW-1695464567");
+        console.log("Google Analytics fallback configuration executed");
+      }, 2000);
     };
+
+    // Load Google Analytics
+    loadGoogleAnalytics();
 
     // Cleanup function
     return () => {
-      document.head.removeChild(script);
+      // Remove the script when component unmounts (optional)
+      const existingScript = document.querySelector(
+        'script[src*="googletagmanager.com/gtag/js"]'
+      );
+      if (existingScript) {
+        // Don't remove as it might affect tracking
+        // existingScript.remove();
+      }
     };
   }, []);
 
