@@ -24,7 +24,7 @@ const AiAutomationWebsite = () => {
     message: "",
   });
 
-  useEffect(() => {
+  /*   useEffect(() => {
     // Simple and clean approach - bypassing TypeScript checking
     const loadGoogleAnalytics = () => {
       // Check if already loaded to avoid duplicates
@@ -85,7 +85,7 @@ const AiAutomationWebsite = () => {
         // existingScript.remove();
       }
     };
-  }, []);
+  }, []); */
 
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
