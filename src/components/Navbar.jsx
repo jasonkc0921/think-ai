@@ -36,12 +36,12 @@ export const Navbar = () => {
               >
                 Features
               </a>
-              {/*               <a
-                href="#about"
+              <a
+                href="/blog"
                 className="text-gray-700 hover:text-green-600 transition-colors"
               >
-                About
-              </a> */}
+                Blogs
+              </a>
               <a
                 href="/#contact"
                 className="text-gray-700 hover:text-green-600 transition-colors"
