@@ -13,7 +13,9 @@ export const Navbar = () => {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               {/* <div className="text-2xl font-bold text-gray-900">TechAI</div> */}
-              <img src={logo} alt="thinkAI logo" width="160" height="80" />
+              <a href="/#home">
+                <img src={logo} alt="thinkAI logo" width="160" height="80" />
+              </a>
             </div>
 
             {/* Desktop Navigation */}
@@ -67,31 +69,31 @@ export const Navbar = () => {
           <div className="md:hidden bg-white border-t">
             <div className="px-2 pt-2 pb-3 space-y-1">
               <a
-                href="#home"
+                href="/#home"
                 className="block px-3 py-2 text-gray-700 hover:text-green-600"
               >
                 Home
               </a>
               <a
-                href="#services"
+                href="/#services"
                 className="block px-3 py-2 text-gray-700 hover:text-green-600"
               >
                 Services
               </a>
               <a
-                href="#features"
+                href="/#features"
                 className="block px-3 py-2 text-gray-700 hover:text-green-600"
               >
                 Features
               </a>
               <a
-                href="#about"
+                href="/blog"
                 className="block px-3 py-2 text-gray-700 hover:text-green-600"
               >
-                About
+                Blogs
               </a>
               <a
-                href="#contact"
+                href="/#contact"
                 className="block px-3 py-2 text-gray-700 hover:text-green-600"
               >
                 Contact
