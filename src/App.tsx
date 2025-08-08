@@ -7,8 +7,8 @@ import { Home } from "./pages/Home";
 import { Landing } from "./pages/Landing";
 import { TandSus } from "./pages/TandS_us";
 import { Privacyus } from "./pages/Privacy_us";
-//import { Zitanwood } from './pages/Take_care_of_zitan_furniture';
-//import { Blog } from './pages/Blog';
+import { StopCPMadness } from "./pages/StopCPMadness";
+import { Blogus } from "./pages/Blog";
 //import 'leaflet/dist/leaflet.css';
 import WhatsAppChat from "./components/WhatsAppChat";
 
@@ -38,10 +38,14 @@ const router = createBrowserRouter([
         path: "/termofservice",
         element: <TandSus />,
       },
-      /*       {
-        path: '/blog',
-        element: <Blog/>,
-      }, */
+      {
+        path: "/blog",
+        element: <Blogus />,
+      },
+      {
+        path: "/blog/stop_copy_paste_madness",
+        element: <StopCPMadness />,
+      },
     ],
   },
 ]);

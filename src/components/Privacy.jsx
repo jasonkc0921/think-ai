@@ -137,10 +137,10 @@ const Privacy = () => {
             customer service team.
           </p>
           <a
-            href="mailto:thinkai_cust_service@gmail.com"
+            href="mailto:thinkai.cust.service@gmail.com"
             className="contact-email"
           >
-            thinkai_cust_service@gmail.com
+            thinkai.cust.service@gmail.com
           </a>
         </section>
       </div>
