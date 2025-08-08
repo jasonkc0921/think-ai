@@ -8,8 +8,8 @@ import { Landing } from "./pages/Landing";
 import { TandSus } from "./pages/TandS_us";
 import { Privacyus } from "./pages/Privacy_us";
 import { StopCPMadness } from "./pages/StopCPMadness";
+import { SmartEmailAutomation } from "./pages/EmailAutomation";
 import { Blogus } from "./pages/Blog";
-//import 'leaflet/dist/leaflet.css';
 import WhatsAppChat from "./components/WhatsAppChat";
 
 const router = createBrowserRouter([
@@ -45,6 +45,10 @@ const router = createBrowserRouter([
       {
         path: "/blog/stop_copy_paste_madness",
         element: <StopCPMadness />,
+      },
+      {
+        path: "/blog/smart_email_automation",
+        element: <SmartEmailAutomation />,
       },
     ],
   },

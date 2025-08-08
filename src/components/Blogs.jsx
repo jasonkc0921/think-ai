@@ -86,7 +86,7 @@ const BlogsContainer = styled.nav`
   // }
 
   .single-blog .img {
-    // height: 12rem;
+    height: 220px;
     width: 100%;
     border: none;
     border-top-right-radius: var(--borderRadius);
