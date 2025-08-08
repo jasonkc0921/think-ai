@@ -18,9 +18,7 @@ const Blogs = () => {
                 </a>
 
                 <div className="blog-info">
-                  <a href={url} target="_blank" rel="noreferrer">
-                    {title}
-                  </a>
+                  <a href={url}>{title}</a>
                   <p>{info}</p>
                 </div>
               </div>
