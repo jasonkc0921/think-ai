@@ -25,6 +25,31 @@ const AiAutomationWebsite = () => {
   });
 
   useEffect(() => {
+    // Create and append the Google Analytics script
+    const script = document.createElement("script");
+    script.async = true;
+    script.src = "https://www.googletagmanager.com/gtag/js?id=AW-1695464567";
+    document.head.appendChild(script);
+
+    // Initialize dataLayer and gtag function
+    script.onload = () => {
+      (window as any).dataLayer = (window as any).dataLayer || [];
+      function gtag(...args: any[]) {
+        (window as any).dataLayer.push(args);
+      }
+      (window as any).gtag = gtag;
+
+      gtag("js", new Date());
+      gtag("config", "AW-1695464567");
+    };
+
+    // Cleanup function
+    return () => {
+      document.head.removeChild(script);
+    };
+  }, []);
+
+  useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
     const scrollTo = urlParams.get("scrollTo");
 
