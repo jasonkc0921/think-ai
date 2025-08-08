@@ -9,6 +9,21 @@
       name="description"
       content="Web site created using create-react-app"
     />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-1695464567"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "AW-1695464567", {
+        debug_mode: true,
+      });
+      console.log("Google Analytics loaded via HTML");
+    </script>
     <link
       rel="apple-touch-icon"
       href="%PUBLIC_URL%/images/ThinkAI_Logo_rectangular.png"
