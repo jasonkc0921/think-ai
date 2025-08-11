@@ -43,7 +43,7 @@ const BlogsContainer = styled.nav`
     width: 100%;
     height: auto;
     margin-top: 50px;
-    padding: 50px;
+    padding: 20px;
   }
 
   .blogs-container h5{
