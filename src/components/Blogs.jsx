@@ -77,7 +77,7 @@ const BlogsContainer = styled.nav`
     background: var(--white);
     position: relative;
     width: 80%;
-    height: 400px;
+    height: 600px;
     padding: 20px;
   }
   
@@ -134,4 +134,7 @@ const BlogsContainer = styled.nav`
     }
 
   }
+
+  
+
 `;
