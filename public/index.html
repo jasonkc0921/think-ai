@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -32,9 +32,41 @@
       });
 
       console.log(
-        "Google Ads conversion tracking fired with label: ikFrCJ3w2oAbEL-4zZQ_"
+        "Google Ads conversion tracking fired with label: ikFrCJ3w2oAbEL-4zZQ_",
       );
     </script>
+    <!--     <script>
+      (function () {
+        if (!window.chatbase || window.chatbase("getState") !== "initialized") {
+          window.chatbase = (...arguments) => {
+            if (!window.chatbase.q) {
+              window.chatbase.q = [];
+            }
+            window.chatbase.q.push(arguments);
+          };
+          window.chatbase = new Proxy(window.chatbase, {
+            get(target, prop) {
+              if (prop === "q") {
+                return target.q;
+              }
+              return (...args) => target(prop, ...args);
+            },
+          });
+        }
+        const onLoad = function () {
+          const script = document.createElement("script");
+          script.src = "https://www.chatbase.co/embed.min.js";
+          script.id = "k7Y4gkahrn_CMRKhKpwZt";
+          script.domain = "www.chatbase.co";
+          document.body.appendChild(script);
+        };
+        if (document.readyState === "complete") {
+          onLoad();
+        } else {
+          window.addEventListener("load", onLoad);
+        }
+      })();
+    </script> -->
     <link
       rel="apple-touch-icon"
       href="%PUBLIC_URL%/images/ThinkAI_Logo_rectangular.png"

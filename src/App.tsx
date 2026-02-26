@@ -10,7 +10,9 @@ import { Privacyus } from "./pages/Privacy_us";
 import { StopCPMadness } from "./pages/StopCPMadness";
 import { SmartEmailAutomation } from "./pages/EmailAutomation";
 import { Blogus } from "./pages/Blog";
+import { CaseStudiesPage } from "./pages/CaseStudies";
 import WhatsAppChat from "./components/WhatsAppChat";
+import ChatWidget from "./components/ChatWidgetNew";
 
 const router = createBrowserRouter([
   {
@@ -50,6 +52,10 @@ const router = createBrowserRouter([
         path: "/blog/smart_email_automation",
         element: <SmartEmailAutomation />,
       },
+      {
+        path: "/case-studies",
+        element: <CaseStudiesPage />,
+      },
     ],
   },
 ]);
@@ -59,10 +65,11 @@ const App = () => {
     <>
       <RouterProvider router={router} />
       {/* WhatsApp Chat Button (appears on all pages) */}
-      <WhatsAppChat
+      {/*       <WhatsAppChat
         phoneNumber="0122670130" // Replace with your actual WhatsApp number
         companyName="Think AI" // Replace with your company name
-      />
+      /> */}
+      {/* <ChatWidget /> */}
     </>
   );
 };
