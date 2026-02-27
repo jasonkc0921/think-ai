@@ -7,6 +7,14 @@ const Blogs = () => {
 
   return (
     <BlogsContainer>
+      <section className="blogs-header">
+        <h1 className="blogs-h1">Insights &amp; Resources</h1>
+        <h2 className="blogs-h2">
+          Stay updated with the latest AI automation trends, tips, and case studies
+        </h2>
+        <div className="underline"></div>
+      </section>
+
       <section className="blogs-container">
         <div className="blogs">
           {blogposts.map((blogpost) => {
@@ -33,6 +41,30 @@ const Blogs = () => {
 export default Blogs;
 
 const BlogsContainer = styled.nav`
+
+.blogs-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px 20px;
+    background: linear-gradient(135deg, #f0fdf4 0%, #eff6ff 100%);
+  }
+
+  .blogs-h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #111827;
+    margin-bottom: 0.75rem;
+  }
+
+  .blogs-h2 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #6b7280;
+    max-width: 540px;
+    line-height: 1.6;
+  }
 
 .blogs-container {
     display: flex;
