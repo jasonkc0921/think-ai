@@ -91,80 +91,85 @@ const BlogsContainer = styled.nav`
   }
   
   .blogs {
-    padding: 5rem 0;
+    padding: 3rem 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 0.1rem;
-    width: 80%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    width: 90%;
   }
-  
-  
+
   .single-blog {
-    // margin-top: 30px;
-    // margin-left: 20px;
     display: flex;
     flex-direction: column;
-    // align-content: center;
-    // align-items: center;
-    background: var(--white);
-    position: relative;
-    width: 80%;
-    height: 600px;
-    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    width: 100%;
+    height: auto;
   }
-  
-  // .single-blog:hover {
-  //   box-shadow: var(--shadow-3);
-  // }
 
   .single-blog .img {
-    height: 220px;
+    height: 200px;
     width: 100%;
-    border: none;
-    border-top-right-radius: var(--borderRadius);
-    border-top-left-radius: var(--borderRadius);
+    object-fit: cover;
+    display: block;
   }
-  
+
   .blog-info {
-    // padding: 1rem 1rem;
-    font-size: 0.8rem;
-    margin-top: 0.5rem;
+    padding: 1.25rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
   }
-  
+
   .blog-info a {
-    text-align: start;
-    margin-top: 0.5rem;
-    margin:-bottom: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
     font-size: 1rem;
+    line-height: 1.4;
     text-transform: uppercase;
-    font-weight: bold;
+    color: #111827;
+    text-decoration: none;
   }
+
+  .blog-info a:hover {
+    color: #16a34a;
+  }
+
   .blog-info p {
-    margin-top: 0.5rem;
-    line-height: 1.5;
-    color: var(--grey-500);
+    margin-top: 0.25rem;
+    line-height: 1.6;
+    color: #6b7280;
+    font-size: 0.9rem;
   }
-  
 
-  @media only screen and (max-width: 760px) {
-
+  @media only screen and (max-width: 1024px) {
     .blogs {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content:center;
-        align-items: center;
-        width: 100%;
+      grid-template-columns: repeat(2, 1fr);
+      width: 95%;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .blogs {
+      grid-template-columns: 1fr;
+      width: 100%;
+      padding: 1.5rem 0;
     }
 
-    .img {
-        // width: 100%;
-        object-fit: cover;
-        // width: 30%
+    .single-blog .img {
+      height: 180px;
     }
 
+    .blogs-h1 {
+      font-size: 1.8rem;
+    }
+
+    .blogs-h2 {
+      font-size: 1rem;
+    }
   }
 
   
