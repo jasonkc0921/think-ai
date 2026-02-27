@@ -1,3 +1,6 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Disallow: /privacy
+Disallow: /termofservice
+
+Sitemap: https://www.think-ai.online/sitemap.xml

@@ -4,101 +4,84 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/ThinkAI_Logo.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=AW-1695464567"
-    ></script>
+    <meta name="theme-color" content="#16a34a" />
+
+    <!-- Primary SEO -->
+    <title>Think AI | AI Automation Solutions for Businesses in Malaysia</title>
+    <meta name="description" content="Think AI helps businesses in Malaysia transform with AI-powered automation. From lead generation and sales order creation to accounting workflows — smart solutions that save time and cut costs." />
+    <meta name="keywords" content="AI automation Malaysia, business automation, workflow automation, RPA, process automation, Microsoft Power Automate, lead generation automation, AI personal assistant, accounting automation, sales order automation, CRM integration" />
+    <meta name="author" content="Think AI Automation" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.think-ai.online" />
+
+    <!-- Open Graph (Facebook, LinkedIn, WhatsApp previews) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Think AI" />
+    <meta property="og:title" content="Think AI | AI Automation Solutions for Businesses in Malaysia" />
+    <meta property="og:description" content="Think AI helps businesses in Malaysia transform with AI-powered automation. From lead generation to accounting workflows — smart solutions that save time and cut costs." />
+    <meta property="og:url" content="https://www.think-ai.online" />
+    <meta property="og:image" content="https://www.think-ai.online/images/ThinkAI_Logo_rectangular.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_MY" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Think AI | AI Automation Solutions for Businesses in Malaysia" />
+    <meta name="twitter:description" content="Think AI helps businesses in Malaysia transform with AI-powered automation. Smart solutions that save time and cut costs." />
+    <meta name="twitter:image" content="https://www.think-ai.online/images/ThinkAI_Logo_rectangular.png" />
+
+    <!-- Structured Data: Organization + Website -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://www.think-ai.online/#organization",
+          "name": "Think AI Automation",
+          "url": "https://www.think-ai.online",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.think-ai.online/images/ThinkAI_Logo_rectangular.png"
+          },
+          "description": "AI-powered automation solutions for businesses in Malaysia — workflow automation, lead generation, sales order creation, and more.",
+          "sameAs": [
+            "https://www.facebook.com/profile.php?id=61568099737311"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.think-ai.online/#website",
+          "url": "https://www.think-ai.online",
+          "name": "Think AI",
+          "description": "AI Automation Solutions for Businesses in Malaysia",
+          "publisher": {
+            "@id": "https://www.think-ai.online/#organization"
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Google Ads Conversion Tracking -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1695464567"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
-      gtag("config", "AW-1695464567", {
-        debug_mode: true,
-      });
-
-      // Fire the conversion event with the specific label
-      gtag("event", "conversion", {
-        send_to: "AW-1695464567/ikFrCJ3w2oAbEL-4zZQ_",
-        value: 1.0, // Optional: set conversion value
-        currency: "USD", // Optional: set currency
-      });
-
-      console.log(
-        "Google Ads conversion tracking fired with label: ikFrCJ3w2oAbEL-4zZQ_",
-      );
+      gtag("config", "AW-1695464567");
     </script>
-    <!--     <script>
-      (function () {
-        if (!window.chatbase || window.chatbase("getState") !== "initialized") {
-          window.chatbase = (...arguments) => {
-            if (!window.chatbase.q) {
-              window.chatbase.q = [];
-            }
-            window.chatbase.q.push(arguments);
-          };
-          window.chatbase = new Proxy(window.chatbase, {
-            get(target, prop) {
-              if (prop === "q") {
-                return target.q;
-              }
-              return (...args) => target(prop, ...args);
-            },
-          });
-        }
-        const onLoad = function () {
-          const script = document.createElement("script");
-          script.src = "https://www.chatbase.co/embed.min.js";
-          script.id = "k7Y4gkahrn_CMRKhKpwZt";
-          script.domain = "www.chatbase.co";
-          document.body.appendChild(script);
-        };
-        if (document.readyState === "complete") {
-          onLoad();
-        } else {
-          window.addEventListener("load", onLoad);
-        }
-      })();
-    </script> -->
-    <link
-      rel="apple-touch-icon"
-      href="%PUBLIC_URL%/images/ThinkAI_Logo_rectangular.png"
-    />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Think AI</title>
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/images/ThinkAI_Logo_rectangular.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
