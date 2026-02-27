@@ -5,31 +5,36 @@ const caseStudies = [
   {
     id: 1,
     title: "Smart AI PA",
-    description: "See how our Smart AI Personal Assistant automates day-to-day tasks, manages schedules, and boosts productivity for your team.",
+    description:
+      "See how our Smart AI Personal Assistant automates day-to-day tasks, manages schedules, and boosts productivity for your team.",
     src: "/videos/smart-ai-pa.mp4",
   },
   {
     id: 2,
     title: "Automated Lead Generation Workflow",
-    description: "Discover how we built an end-to-end automated lead generation pipeline that captures, qualifies, and nurtures leads without manual effort.",
+    description:
+      "Discover how we built an end-to-end automated lead generation pipeline that captures, qualifies, and nurtures leads without manual effort.",
     src: "/videos/automated-lead-generation.mp4",
   },
   {
     id: 3,
     title: "Automated PO Forwarding Workflow",
-    description: "Watch how purchase orders are automatically extracted, validated, and forwarded to the right teams — saving hours of manual processing.",
+    description:
+      "Watch how purchase orders are automatically extracted, validated, and forwarded to the right teams — saving hours of manual processing.",
     src: "/videos/automated-po-forwarding.mp4",
   },
   {
     id: 4,
     title: "Automated Sales Order Creation with MS Power Automate",
-    description: "Learn how we leveraged Microsoft Power Automate to streamline sales order creation, reducing errors and turnaround time dramatically.",
+    description:
+      "Learn how we leveraged Microsoft Power Automate to streamline sales order creation, reducing errors and turnaround time dramatically.",
     src: "/videos/automated-sales-order.mp4",
   },
   {
     id: 5,
     title: "Automate Your Accounting Workflow",
-    description: "Explore how AI-driven automation handles invoicing, reconciliation, and reporting — letting your finance team focus on what matters.",
+    description:
+      "Explore how AI-driven automation handles invoicing, reconciliation, and reporting — letting your finance team focus on what matters.",
     src: "/videos/automate-accounting.mp4",
   },
 ];
@@ -78,7 +83,8 @@ const CaseStudies = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Case Studies</h1>
           <p className="text-lg md:text-xl text-green-100 max-w-2xl mx-auto">
-            Real-world automation solutions we've built for our clients — watch them in action.
+            Real-world automation solutions we've built for our clients — watch
+            them in action.
           </p>
           <div className="mt-6 w-20 h-1 bg-white opacity-50 mx-auto rounded-full"></div>
         </div>
@@ -103,7 +109,7 @@ const CaseStudies = () => {
             Let's build a custom automation solution tailored to your workflows.
           </p>
           <a
-            href="/#contact"
+            href="https://think-ai.online/?scrollTo=contact"
             className="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200"
           >
             Get in Touch
