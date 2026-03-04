@@ -15,6 +15,21 @@ export const blogposts = [
   `,
     url: "blog/smart_email_automation",
   },
+  {
+    id: 3,
+    image: "./images/claude-cowork-automation.png",
+    title: "Claude as Your Coworker: The Case for AI-Powered Business Automation",
+    info: `Claude AI, developed by Anthropic, is transforming how businesses operate by acting as an intelligent coworker across content creation, data analysis, customer support, and document processing. With 78% of companies using AI in business functions in 2024 and 64% expecting productivity gains, Claude's Haiku, Sonnet, and Opus models let any business automate complex workflows without deep technical expertise. Discover how to integrate Claude into your daily operations and unlock measurable efficiency gains.
+  `,
+    url: "blog/claude_cowork_automation",
+  },
+  {
+    id: 4,
+    image: "./images/claude_cowork_use_cases.jpg",
+    title: "Claude Cowork Use Cases: Real-World Business Applications of Claude Cowork as a Workplace Coworker",
+    info: `Discover how Claude Cowork is transforming real businesses across software development, legal, marketing, sales, and administration. From reducing R&D time by 95% to tripling revenue per worker, Claude acts as an autonomous AI coworker—not just a chatbot—unlocking measurable productivity gains. Explore the top five use cases and learn how to integrate Claude into your daily workflows today.`,
+    url: "blog/claude_cowork_use_cases",
+  },
 ];
 
 export default blogposts;

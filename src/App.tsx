@@ -9,6 +9,8 @@ import { TandSus } from "./pages/TandS_us";
 import { Privacyus } from "./pages/Privacy_us";
 import { StopCPMadness } from "./pages/StopCPMadness";
 import { SmartEmailAutomation } from "./pages/EmailAutomation";
+import { ClaudeCoworkAutomationPage } from "./pages/ClaudeCoworkAutomationPage";
+import { ClaudeCoworkUseCasesPage } from "./pages/ClaudeCoworkUseCasesPage";
 import { Blogus } from "./pages/Blog";
 import { CaseStudiesPage } from "./pages/CaseStudies";
 import WhatsAppChat from "./components/WhatsAppChat";
@@ -51,6 +53,14 @@ const router = createBrowserRouter([
       {
         path: "/blog/smart_email_automation",
         element: <SmartEmailAutomation />,
+      },
+      {
+        path: "/blog/claude_cowork_automation",
+        element: <ClaudeCoworkAutomationPage />,
+      },
+      {
+        path: "/blog/claude_cowork_use_cases",
+        element: <ClaudeCoworkUseCasesPage />,
       },
       {
         path: "/case-studies",
